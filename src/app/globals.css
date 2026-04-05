@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #FF5C00;
+  --color-primary-dark: #E04A00;
+  --color-background: #F8F7F3;
+  --color-surface-card: #FFFFFF;
+  --color-surface-soft: #F2F2F2;
+  --color-foreground: #1A1A1A;
+  --color-foreground-muted: #555555;
+  --font-sans: "Inter", "Plus Jakarta Sans", sans-serif;
+  --font-serif: "EB Garamond", "Sentient", serif;
+  
+  --radius-button: 100px;
+  --radius-card: 32px;
+}
+
+:root {
+  --background: #F8F7F3;
+  --foreground: #1A1A1A;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Custom scrollbar and utils */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.shadow-soft {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.03);
+}
